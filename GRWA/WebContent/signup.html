@@ -35,7 +35,7 @@
         <script src="js/vendor/html5shiv.min.js"></script>
         <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
-
+	<script src="./js/app/registration.js"></script>
 </head>
 <body>  
 
@@ -125,14 +125,13 @@
 <!--                                 <p>..</p> -->
                             </div><!-- end title -->
                             
-                            <form class="big-contact-form" role="search">
-                                <input type="text" class="form-control" placeholder="Enter Email-id">
-                                <input type="email" class="form-control" placeholder="Enter First Name">
-                                <input type="text" class="form-control" placeholder="Enter Last Name">
-                                <input type="text" class="form-control" placeholder="Enter Password">
-								<input type="text" class="form-control" placeholder="ReEnter Password">
-								<!-- <textarea class="form-control" placeholder="Message goes here.."></textarea>-->
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                            <form class="big-contact-form" role="search" action="javascript:registration();" method="post">
+                                <input type="email" id="emailId" name="emailId" class="form-control" placeholder="Enter Email-id">
+                                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter First Name">
+                                <input type="text" id="lastName" name="lastName"class="form-control" placeholder="Enter Last Name">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Enter Password">
+								<input type="password" id="re_password" name="re_password" class="form-control" placeholder="ReEnter Password">
+                                <button type="submit" class="btn btn-primary">Sign Up</button>
 								
                             </form>
                         </div><!-- end col -->
